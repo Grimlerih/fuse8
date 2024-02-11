@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Тестовое задание fuse8
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> [!TIP]
+> ссылка на деплой - https://main--fuse8-grimlerih.netlify.app/;
+>
+> моковые данные по пути `src/data/data.ts`
 
-Currently, two official plugins are available:
+## Описание задачи:
+Нужно реализовать поиск по имени или рейтингу пользователей  и отобразить найденных пользователей на странице. При заходе на страницу виден только поиск, в который можно ввести значение.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Дизайн: https://www.figma.com/file/Siy8w2LtAhF78jrx5VsHu4/Frontend-test-task-%E2%80%94-Users?type=design&node-id=0%3A1&mode=design&t=Rdc9WCxjXnPAdXjb-1
 
-## Expanding the ESLint configuration
+## Технические требования:
+1.	Адаптивная вёрстка от 320px до 1920px
+2.	Поддержка браузеров: последняя версия Chrome
+3.	Использование React или Vue
+   
+## Требования задачи:
+1.	Поиск автоматически должен быть в фокусе
+2.	Каждая карточка пользователя это ссылка с урлом на адрес https://user.ru/{name}, сами урлы нерабочие, главное, что по ним можно перейти
+3.	Готовый код выложить либо на GitHub+GitHub Pages (ожидаем две ссылки соответственно: на репозиторий и на работающий сайт).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
