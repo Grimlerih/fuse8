@@ -10,6 +10,7 @@ export const Search: FC<ISearch> = ({ text, setText }) => {
       className={style.container}
       type='text'
       placeholder='Search users by name or rating...'
+      autoFocus
     ></input>
   );
 };
