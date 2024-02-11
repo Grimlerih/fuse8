@@ -24,7 +24,7 @@ function App() {
         }
       })
     );
-  }, 200);
+  }, 500);
 
   useEffect(() => {
     deboucedText();

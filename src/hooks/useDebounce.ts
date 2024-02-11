@@ -1,15 +1,14 @@
 import { useCallback, useRef } from 'react';
 
-interface IuseDebounce {
-  callback: () => void;
-  delay: number;
-}
+// Определяем тип для функции обратного вызова
+type CallbackFunction = (...args: any[]) => void;
 
-export function useDebounce(callback: () => void, delay: number) {
-  let timer = useRef<number>();
+export function useDebounce(callback: CallbackFunction, delay: number) {
+  const timer = useRef<number>();
 
   const debouncedCallback = useCallback(
-    (...args: any[]) => {
+    (...args: Parameters<CallbackFunction>) => {
+      // Используем Parameters<CallbackFunction> для получения типов аргументов функции callback
       if (timer.current) {
         clearTimeout(timer.current);
       }
