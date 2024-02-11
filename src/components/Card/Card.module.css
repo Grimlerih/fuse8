@@ -1,0 +1,43 @@
+.container {
+  max-width: 630px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 7px 25px 0px rgba(100, 100, 111, 0.2);
+}
+
+.card {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_name {
+  color: rgb(40, 38, 38);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  color: rgb(118, 118, 118);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@media screen and (max-width: 650px) {
+  .card_info {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
